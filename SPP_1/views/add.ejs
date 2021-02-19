@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <link rel="stylesheet" type="text/css" href="/header.css">
+        <link rel="stylesheet" type="text/css" href="/add.css">
+    </head> 
+    <%- include('header.ejs') %>
+    <body> 
+        <form class="add_form" enctype="multipart/form-data"  action="/add" method="post">
+            <h1>Добавление автомобиля</h1>
+            <div>
+                <input name="brand" placeholder="Марка" required>
+            </div>
+            <div>
+                <input name="model" placeholder="Модель" required>
+            </div>
+            <div>
+                <input name="carBody" placeholder="Кузов" required>
+            </div>
+            <div>
+                <input type="datetime-local" name="year" placeholder="Год выпуска" required>
+            </div>
+            <div>
+                <input name="transmission" placeholder="Коробка передач" required>
+            </div>
+            <div>
+                <select name="engine">
+                    Тип двигателя
+                    <option value="gas">Бензин</option>
+                    <option value="electro">Электро</option>
+                    <option value="hybrid">Гибрид</option>
+                    <option value="diesel">Дизель</option>
+                </select>
+            </div>
+            
+            <div>
+                <input class="file" type="file" name="file" placeholder="Прикрепить фото">
+            </div>
+            <button type="submit">Добавить</button>
+        </form>
+    </body>
+</html>

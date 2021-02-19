@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+  
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: grid;
+    height: 100%;
+    vertical-align: middle;
+    font: 20px "Trebuchet MS", "Lucida Sans";
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+.detele_form{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: auto auto;
+    max-width: 350px;
+    width: 350px;
+}
+
+.detele_form button {
+    text-decoration: none;
+    display: inline-block;
+    width: 140px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 45px;
+    margin: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #524f4e;
+    background: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+  }
+  .detele_form button:hover {
+    background: #e52e2e;
+    box-shadow: 0 15px 20px #e52e2e;
+    color: white;
+    transform: translateY(-7px);
+  }
