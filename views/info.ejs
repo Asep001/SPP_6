@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="/info.css">
+        <link rel="stylesheet" type="text/css" href="/header.css">
+    </head>
+    <%- include('header.ejs') %>
+    <body>
+        <div class="info"> 
+            <h1 class="title"><%= car.brand + ' ' + car.model%></h1> 
+            <img src="<%= car.photoPath %>" alt="Здесь должна быть картинка с автомобилем">
+            <ul class="zebra">
+                <li><strong>Кузов: </strong><%= car.carBody %></li>
+                <li><strong>Год выпуска: </strong><%= car.year %></li>
+                <li><strong>Тип двигателя: </strong><%= car.engine %></li>
+                <li><strong>Тип коробки передач: </strong><%= car.transmission %></li>
+              </ul>
+        </div>
+
+    </body>
+</html>

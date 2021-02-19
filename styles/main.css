@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+  
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: grid;
+    height: 100%;
+    vertical-align: middle;
+    font: 20px "Trebuchet MS", "Lucida Sans";
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    background-color: #E1F1FF;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: auto auto;
+    max-width: 350px;
+    width: 350px;
+    counter-reset: li; 
+    }
+    .list li {
+    padding: 7px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+    box-shadow: 2px -2px 5px 0 rgba(0,0,0,.1),
+         -2px -2px 5px 0 rgba(0,0,0,.1),
+        2px 2px 5px 0 rgba(0,0,0,.1),
+        -2px 2px 5px 0 rgba(0,0,0,.1);
+    font-size: 20px;
+    letter-spacing: 2px;
+    transition: 0.3s all linear;
+    background-color: white;
+    }
+
+    .list li :hover {
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+    }
+    .list .gas:hover {
+        border-left: 10px solid #f05d22;
+        border-right: 10px solid #f05d22;
+    }
+
+    .list .electro:hover {
+        border-left: 10px solid #3af022;
+        border-right: 10px solid #3af022;
+    }
+
+    .list .hybrid:hover {
+        border-left: 10px solid #177cff;
+        border-right: 10px solid #177cff;
+    }
+
+    .list .diesel:hover {
+        border-left: 10px solid #e9e500;
+        border-right: 10px solid #e9e500;
+    }
